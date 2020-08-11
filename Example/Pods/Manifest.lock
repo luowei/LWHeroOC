@@ -1,0 +1,16 @@
+PODS:
+  - LWHeroOC (0.1.0)
+
+DEPENDENCIES:
+  - LWHeroOC (from `../`)
+
+EXTERNAL SOURCES:
+  LWHeroOC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LWHeroOC: 1a16cbe8e81eb8085a8f17f981835fb10a092dbd
+
+PODFILE CHECKSUM: c4b77fb17cd2460a095b7f9a10fe5c4e1838ab82
+
+COCOAPODS: 1.9.2

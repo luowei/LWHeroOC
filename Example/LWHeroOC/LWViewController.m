@@ -7,23 +7,34 @@
 //
 
 #import "LWViewController.h"
+#import "UIKit+HeroExamples.h"
 
 @interface LWViewController ()
+
+@property (strong, nonatomic) NSArray *storyboards;
 
 @end
 
 @implementation LWViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    _storyboards = @[
+                     @[],
+                     @[@"Basic", @"MusicPlayer", @"Menu"],
+                     @[@"CityGuide", @"ImageViewer", @"ListToGrid", @"ImageGallery"],
+                     @[@"LiveInjection", @"Debug", @"LabelMorph"]
+                     ];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.item < [_storyboards[indexPath.section] count]) {
+        NSString *storyboardName = _storyboards[indexPath.section][indexPath.row];
+        UIViewController *viewController = [self.view viewControllerForStoryboardName:storyboardName];
+        [self presentViewController:viewController animated:YES completion:nil];
+    }
 }
 
 @end

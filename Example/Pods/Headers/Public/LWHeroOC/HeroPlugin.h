@@ -1,0 +1,1 @@
+../../../../../LWHeroOC/Classes/HeroPlugin.h

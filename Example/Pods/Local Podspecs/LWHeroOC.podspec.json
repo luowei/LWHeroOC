@@ -1,0 +1,22 @@
+{
+  "name": "LWHeroOC",
+  "version": "0.1.0",
+  "summary": "A short description of LWHeroOC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/luowei/LWHeroOC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "luowei": "luowei@wodedata.com"
+  },
+  "source": {
+    "git": "https://github.com/luowei/LWHeroOC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LWHeroOC/Classes/**/*"
+}

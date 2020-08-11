@@ -15,32 +15,37 @@
 		6003F59E195388D20070C39A /* LWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LWAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* LWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LWViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8A296686E9CE4C8099B0EB20 /* Pods_LWHeroOC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EFEB7F1E5BA346D7A77AC8 /* Pods_LWHeroOC_Tests.framework */; };
-		9226EBBB44C27D1518B55883 /* Pods_LWHeroOC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49601C0431E489651E12A8E0 /* Pods_LWHeroOC_Example.framework */; };
+		EA07891424E296D500C44596 /* UIKit+HeroExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891124E296D500C44596 /* UIKit+HeroExamples.m */; };
+		EA07891524E296D500C44596 /* UIImage+AverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891324E296D500C44596 /* UIImage+AverageColor.m */; };
+		EA07893A24E29BFA00C44596 /* Basic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893324E29B3D00C44596 /* Basic.storyboard */; };
+		EA07893B24E29BFA00C44596 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893524E29B3D00C44596 /* Menu.storyboard */; };
+		EA07893C24E29BFA00C44596 /* MusicPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893424E29B3D00C44596 /* MusicPlayer.storyboard */; };
+		EA07893D24E29BFF00C44596 /* CityGuide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893924E29B6100C44596 /* CityGuide.storyboard */; };
+		EA07893E24E29C0500C44596 /* ImageGallery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893624E29B4800C44596 /* ImageGallery.storyboard */; };
+		EA07893F24E29C0500C44596 /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893724E29B4800C44596 /* ImageViewer.storyboard */; };
+		EA07894024E29C0900C44596 /* ListToGrid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA07893824E29B5900C44596 /* ListToGrid.storyboard */; };
+		EA07894124E29C2800C44596 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892D24E29B2700C44596 /* City.m */; };
+		EA07894224E29C2800C44596 /* CityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892F24E29B2700C44596 /* CityCell.m */; };
+		EA07894324E29C2800C44596 /* CityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07893124E29B2700C44596 /* CityViewController.m */; };
+		EA07894424E29C2800C44596 /* CityGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07893224E29B2700C44596 /* CityGuideViewController.m */; };
+		EA07894524E29C3500C44596 /* ImageGalleryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891824E29B2600C44596 /* ImageGalleryViewController.m */; };
+		EA07894624E29C3500C44596 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891924E29B2600C44596 /* ImageViewController.m */; };
+		EA07894724E29C3500C44596 /* ImageLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891A24E29B2600C44596 /* ImageLibrary.m */; };
+		EA07894824E29C3500C44596 /* ScrollingImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891C24E29B2600C44596 /* ScrollingImageCell.m */; };
+		EA07894924E29C3500C44596 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07891F24E29B2600C44596 /* ImageCell.m */; };
+		EA07894A24E29C3F00C44596 /* GridCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892324E29B2700C44596 /* GridCollectionViewController.m */; };
+		EA07894B24E29C3F00C44596 /* GridImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892424E29B2700C44596 /* GridImageCell.m */; };
+		EA07894C24E29C3F00C44596 /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892624E29B2700C44596 /* ListTableViewController.m */; };
+		EA07894D24E29C3F00C44596 /* ListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA07892824E29B2700C44596 /* ListTableViewCell.m */; };
+		FCBAB674C2DA862CD654A063 /* libPods-LWHeroOC_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8602146F80F14476B64BBBC9 /* libPods-LWHeroOC_Example.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = LWHeroOC;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		27DEA8C4C9CBC9BB409424B8 /* Pods-LWHeroOC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHeroOC_Example.debug.xcconfig"; path = "Target Support Files/Pods-LWHeroOC_Example/Pods-LWHeroOC_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		49601C0431E489651E12A8E0 /* Pods_LWHeroOC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWHeroOC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AE08068DF5E1C8F8256E27F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5DE312308920C9F3354D8FAB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5AE08068DF5E1C8F8256E27F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5DE312308920C9F3354D8FAB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LWHeroOC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWHeroOC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,18 +59,51 @@
 		6003F5A5195388D20070C39A /* LWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* LWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* LWHeroOC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWHeroOC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B6B1B9BB41ED220AA59886E /* Pods-LWHeroOC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHeroOC_Tests.release.xcconfig"; path = "Target Support Files/Pods-LWHeroOC_Tests/Pods-LWHeroOC_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8602146F80F14476B64BBBC9 /* libPods-LWHeroOC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LWHeroOC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2EFEB7F1E5BA346D7A77AC8 /* Pods_LWHeroOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWHeroOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3C4257D71AA58C513F9151A /* LWHeroOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LWHeroOC.podspec; path = ../LWHeroOC.podspec; sourceTree = "<group>"; };
+		C3C4257D71AA58C513F9151A /* LWHeroOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LWHeroOC.podspec; path = ../LWHeroOC.podspec; sourceTree = "<group>"; };
 		D0C783484F46077AB57E860F /* Pods-LWHeroOC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHeroOC_Example.release.xcconfig"; path = "Target Support Files/Pods-LWHeroOC_Example/Pods-LWHeroOC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EA07891024E296D500C44596 /* UIKit+HeroExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+HeroExamples.h"; sourceTree = "<group>"; };
+		EA07891124E296D500C44596 /* UIKit+HeroExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIKit+HeroExamples.m"; sourceTree = "<group>"; };
+		EA07891224E296D500C44596 /* UIImage+AverageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AverageColor.h"; sourceTree = "<group>"; };
+		EA07891324E296D500C44596 /* UIImage+AverageColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AverageColor.m"; sourceTree = "<group>"; };
+		EA07891724E29B2600C44596 /* ScrollingImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollingImageCell.h; sourceTree = "<group>"; };
+		EA07891824E29B2600C44596 /* ImageGalleryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageGalleryViewController.m; sourceTree = "<group>"; };
+		EA07891924E29B2600C44596 /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		EA07891A24E29B2600C44596 /* ImageLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageLibrary.m; sourceTree = "<group>"; };
+		EA07891B24E29B2600C44596 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		EA07891C24E29B2600C44596 /* ScrollingImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollingImageCell.m; sourceTree = "<group>"; };
+		EA07891D24E29B2600C44596 /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		EA07891E24E29B2600C44596 /* ImageGalleryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageGalleryViewController.h; sourceTree = "<group>"; };
+		EA07891F24E29B2600C44596 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		EA07892024E29B2600C44596 /* ImageLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageLibrary.h; sourceTree = "<group>"; };
+		EA07892224E29B2600C44596 /* ListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewCell.h; sourceTree = "<group>"; };
+		EA07892324E29B2700C44596 /* GridCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridCollectionViewController.m; sourceTree = "<group>"; };
+		EA07892424E29B2700C44596 /* GridImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridImageCell.m; sourceTree = "<group>"; };
+		EA07892524E29B2700C44596 /* ListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
+		EA07892624E29B2700C44596 /* ListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewController.m; sourceTree = "<group>"; };
+		EA07892724E29B2700C44596 /* GridImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridImageCell.h; sourceTree = "<group>"; };
+		EA07892824E29B2700C44596 /* ListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListTableViewCell.m; sourceTree = "<group>"; };
+		EA07892924E29B2700C44596 /* GridCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridCollectionViewController.h; sourceTree = "<group>"; };
+		EA07892B24E29B2700C44596 /* CityCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityCell.h; sourceTree = "<group>"; };
+		EA07892C24E29B2700C44596 /* CityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityViewController.h; sourceTree = "<group>"; };
+		EA07892D24E29B2700C44596 /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		EA07892E24E29B2700C44596 /* CityGuideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityGuideViewController.h; sourceTree = "<group>"; };
+		EA07892F24E29B2700C44596 /* CityCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityCell.m; sourceTree = "<group>"; };
+		EA07893024E29B2700C44596 /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		EA07893124E29B2700C44596 /* CityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityViewController.m; sourceTree = "<group>"; };
+		EA07893224E29B2700C44596 /* CityGuideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityGuideViewController.m; sourceTree = "<group>"; };
+		EA07893324E29B3D00C44596 /* Basic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Basic.storyboard; sourceTree = "<group>"; };
+		EA07893424E29B3D00C44596 /* MusicPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MusicPlayer.storyboard; sourceTree = "<group>"; };
+		EA07893524E29B3D00C44596 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		EA07893624E29B4800C44596 /* ImageGallery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageGallery.storyboard; sourceTree = "<group>"; };
+		EA07893724E29B4800C44596 /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
+		EA07893824E29B5900C44596 /* ListToGrid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListToGrid.storyboard; sourceTree = "<group>"; };
+		EA07893924E29B6100C44596 /* CityGuide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CityGuide.storyboard; sourceTree = "<group>"; };
 		FA4A5F3B9F3D4AD4D6588794 /* Pods-LWHeroOC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHeroOC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LWHeroOC_Tests/Pods-LWHeroOC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,18 +115,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				9226EBBB44C27D1518B55883 /* Pods_LWHeroOC_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				8A296686E9CE4C8099B0EB20 /* Pods_LWHeroOC_Tests.framework in Frameworks */,
+				FCBAB674C2DA862CD654A063 /* libPods-LWHeroOC_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +130,6 @@
 				FA4A5F3B9F3D4AD4D6588794 /* Pods-LWHeroOC_Tests.debug.xcconfig */,
 				7B6B1B9BB41ED220AA59886E /* Pods-LWHeroOC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,7 +138,6 @@
 			children = (
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for LWHeroOC */,
-				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				1A118F18B32F56B216F78F35 /* Pods */,
@@ -123,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F58A195388D20070C39A /* LWHeroOC_Example.app */,
-				6003F5AE195388D20070C39A /* LWHeroOC_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,8 +159,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				49601C0431E489651E12A8E0 /* Pods_LWHeroOC_Example.framework */,
 				A2EFEB7F1E5BA346D7A77AC8 /* Pods_LWHeroOC_Tests.framework */,
+				8602146F80F14476B64BBBC9 /* libPods-LWHeroOC_Example.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +168,16 @@
 		6003F593195388D20070C39A /* Example for LWHeroOC */ = {
 			isa = PBXGroup;
 			children = (
+				EA07893324E29B3D00C44596 /* Basic.storyboard */,
+				EA07893524E29B3D00C44596 /* Menu.storyboard */,
+				EA07893424E29B3D00C44596 /* MusicPlayer.storyboard */,
+				EA07892A24E29B2700C44596 /* CityGuide */,
+				EA07891624E29B2600C44596 /* ImageGallery */,
+				EA07892124E29B2600C44596 /* ListToGrid */,
+				EA07891224E296D500C44596 /* UIImage+AverageColor.h */,
+				EA07891324E296D500C44596 /* UIImage+AverageColor.m */,
+				EA07891024E296D500C44596 /* UIKit+HeroExamples.h */,
+				EA07891124E296D500C44596 /* UIKit+HeroExamples.m */,
 				6003F59C195388D20070C39A /* LWAppDelegate.h */,
 				6003F59D195388D20070C39A /* LWAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -168,25 +202,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6003F5B5195388D20070C39A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
-				6003F5B6195388D20070C39A /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +210,57 @@
 				5DE312308920C9F3354D8FAB /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		EA07891624E29B2600C44596 /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				EA07893624E29B4800C44596 /* ImageGallery.storyboard */,
+				EA07893724E29B4800C44596 /* ImageViewer.storyboard */,
+				EA07891724E29B2600C44596 /* ScrollingImageCell.h */,
+				EA07891824E29B2600C44596 /* ImageGalleryViewController.m */,
+				EA07891924E29B2600C44596 /* ImageViewController.m */,
+				EA07891A24E29B2600C44596 /* ImageLibrary.m */,
+				EA07891B24E29B2600C44596 /* ImageCell.h */,
+				EA07891C24E29B2600C44596 /* ScrollingImageCell.m */,
+				EA07891D24E29B2600C44596 /* ImageViewController.h */,
+				EA07891E24E29B2600C44596 /* ImageGalleryViewController.h */,
+				EA07891F24E29B2600C44596 /* ImageCell.m */,
+				EA07892024E29B2600C44596 /* ImageLibrary.h */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		EA07892124E29B2600C44596 /* ListToGrid */ = {
+			isa = PBXGroup;
+			children = (
+				EA07893824E29B5900C44596 /* ListToGrid.storyboard */,
+				EA07892224E29B2600C44596 /* ListTableViewCell.h */,
+				EA07892324E29B2700C44596 /* GridCollectionViewController.m */,
+				EA07892424E29B2700C44596 /* GridImageCell.m */,
+				EA07892524E29B2700C44596 /* ListTableViewController.h */,
+				EA07892624E29B2700C44596 /* ListTableViewController.m */,
+				EA07892724E29B2700C44596 /* GridImageCell.h */,
+				EA07892824E29B2700C44596 /* ListTableViewCell.m */,
+				EA07892924E29B2700C44596 /* GridCollectionViewController.h */,
+			);
+			path = ListToGrid;
+			sourceTree = "<group>";
+		};
+		EA07892A24E29B2700C44596 /* CityGuide */ = {
+			isa = PBXGroup;
+			children = (
+				EA07893924E29B6100C44596 /* CityGuide.storyboard */,
+				EA07892B24E29B2700C44596 /* CityCell.h */,
+				EA07892C24E29B2700C44596 /* CityViewController.h */,
+				EA07892D24E29B2700C44596 /* City.m */,
+				EA07892E24E29B2700C44596 /* CityGuideViewController.h */,
+				EA07892F24E29B2700C44596 /* CityCell.m */,
+				EA07893024E29B2700C44596 /* City.h */,
+				EA07893124E29B2700C44596 /* CityViewController.m */,
+				EA07893224E29B2700C44596 /* CityGuideViewController.m */,
+			);
+			path = CityGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +274,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EC71A1373876A4C29BBBE8C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,25 +283,6 @@
 			productName = LWHeroOC;
 			productReference = 6003F58A195388D20070C39A /* LWHeroOC_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6003F5AD195388D20070C39A /* LWHeroOC_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "LWHeroOC_Tests" */;
-			buildPhases = (
-				4307E5E22540EE919F56600F /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
-			);
-			name = LWHeroOC_Tests;
-			productName = LWHeroOCTests;
-			productReference = 6003F5AE195388D20070C39A /* LWHeroOC_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -248,8 +294,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = luowei;
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = G3A2KYKYBU;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -258,6 +305,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -267,7 +315,6 @@
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* LWHeroOC_Example */,
-				6003F5AD195388D20070C39A /* LWHeroOC_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,45 +325,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				EA07894024E29C0900C44596 /* ListToGrid.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				EA07893E24E29C0500C44596 /* ImageGallery.storyboard in Resources */,
+				EA07893D24E29BFF00C44596 /* CityGuide.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				EA07893B24E29BFA00C44596 /* Menu.storyboard in Resources */,
+				EA07893F24E29C0500C44596 /* ImageViewer.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AC195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+				EA07893C24E29BFA00C44596 /* MusicPlayer.storyboard in Resources */,
+				EA07893A24E29BFA00C44596 /* Basic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4307E5E22540EE919F56600F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LWHeroOC_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A25A082EEBB803466A2CBAC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -339,24 +363,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC71A1373876A4C29BBBE8C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LWHeroOC_Example/Pods-LWHeroOC_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LWHeroOC/LWHeroOC.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LWHeroOC.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LWHeroOC_Example/Pods-LWHeroOC_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,43 +370,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA07891524E296D500C44596 /* UIImage+AverageColor.m in Sources */,
 				6003F59E195388D20070C39A /* LWAppDelegate.m in Sources */,
+				EA07894124E29C2800C44596 /* City.m in Sources */,
+				EA07894B24E29C3F00C44596 /* GridImageCell.m in Sources */,
+				EA07894924E29C3500C44596 /* ImageCell.m in Sources */,
+				EA07891424E296D500C44596 /* UIKit+HeroExamples.m in Sources */,
+				EA07894624E29C3500C44596 /* ImageViewController.m in Sources */,
+				EA07894C24E29C3F00C44596 /* ListTableViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* LWViewController.m in Sources */,
+				EA07894D24E29C3F00C44596 /* ListTableViewCell.m in Sources */,
+				EA07894524E29C3500C44596 /* ImageGalleryViewController.m in Sources */,
+				EA07894224E29C2800C44596 /* CityCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AA195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				EA07894A24E29C3F00C44596 /* GridCollectionViewController.m in Sources */,
+				EA07894724E29C3500C44596 /* ImageLibrary.m in Sources */,
+				EA07894424E29C2800C44596 /* CityGuideViewController.m in Sources */,
+				EA07894824E29C3500C44596 /* ScrollingImageCell.m in Sources */,
+				EA07894324E29C2800C44596 /* CityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* LWHeroOC_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -494,12 +491,15 @@
 			baseConfigurationReference = 27DEA8C4C9CBC9BB409424B8 /* Pods-LWHeroOC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G3A2KYKYBU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LWHeroOC/LWHeroOC-Prefix.pch";
 				INFOPLIST_FILE = "LWHeroOC/LWHeroOC-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wodedata.demo.LWHeroOC-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -510,60 +510,17 @@
 			baseConfigurationReference = D0C783484F46077AB57E860F /* Pods-LWHeroOC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = G3A2KYKYBU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LWHeroOC/LWHeroOC-Prefix.pch";
 				INFOPLIST_FILE = "LWHeroOC/LWHeroOC-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wodedata.demo.LWHeroOC-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = dev_wildcard;
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6003F5C3195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4A5F3B9F3D4AD4D6588794 /* Pods-LWHeroOC_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LWHeroOC_Example.app/LWHeroOC_Example";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6003F5C4195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B6B1B9BB41ED220AA59886E /* Pods-LWHeroOC_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LWHeroOC_Example.app/LWHeroOC_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -584,15 +541,6 @@
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
 				6003F5C1195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "LWHeroOC_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

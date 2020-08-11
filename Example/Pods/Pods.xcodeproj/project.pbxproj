@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03CA7752500B4C1B109F3B3B2AA6C00D /* Pods-LWHeroOC_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC54A8462C975172A06A8680AC82E70F /* Pods-LWHeroOC_Example-dummy.m */; };
+		046E044BE819CA8F9E9F035B2671C6AD /* CALayer+Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3398881DD1D18F830283F638ACCC8210 /* CALayer+Hero.m */; };
+		117F72966450C8C93A7D04842ECB4E8F /* SourcePreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = CFFA1DF61C5A342C2BDFC926122C5F4B /* SourcePreprocessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		180C68AEB276C5E3980723080DD64BA1 /* HeroContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A5DB656EE64D889F8D3B59C192F31 /* HeroContext.m */; };
+		27E4285773C9E9E62A47A98DF370E26A /* HeroDefaultAnimatorViewContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 67FD9242768A5EC06B31EB817348FA22 /* HeroDefaultAnimatorViewContext.m */; };
+		2D5F7AB4F3B0CCA68B254954A6436C00 /* CALayer+Hero.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE039DA6093DDD5BA757E34FB2CB967 /* CALayer+Hero.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2E4F02EDD7C3E5EB381181113C875545 /* HeroDefaultAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1B9529E5BE162C0FA728750414486C /* HeroDefaultAnimator.m */; };
+		3592D7E20B1C96CA936805C135C7B3A5 /* NSArray+HeroModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 92FD0AEEE9819304324DA1399ED82E4C /* NSArray+HeroModifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3632E1B56004222BAFCBE7EE1E4A7137 /* CascadePreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 89631AF6FA1C03266AFB1807FAA0EA7C /* CascadePreprocessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3B4140C77F7ABCA4C0CEA76DC1CA4517 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 987228C378C6BAD032DAD73BCEE3FC22 /* Hero.m */; };
+		46C5A7C28DD27D357780E3251D1BD658 /* LWHeroOC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61814B8F1F48A472AC3A0C93D43CD80F /* LWHeroOC-dummy.m */; };
+		4912B0F6355D464A0960A1425BF20274 /* Hero.h in Headers */ = {isa = PBXBuildFile; fileRef = F0AFB1D77EEC2388261E1A236BD01DCC /* Hero.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4DE5C74B96B6D292D86E3297D0A1AAA6 /* HeroPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = C5E24CB8F2B78CE8446E1CC98A607C94 /* HeroPlugin.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		582B94609758C96DD4F964301446B367 /* UIKit+Hero.h in Headers */ = {isa = PBXBuildFile; fileRef = 98682679507835CC1B1C56E150725950 /* UIKit+Hero.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5FDA4AD08A5790C8B19EB6B285FA80EE /* BasePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C06F65982643E936B534EB138CD8701 /* BasePreprocessor.m */; };
+		781465E26DDED301436CC25CA61821AD /* BasePreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B52E2041DF6F1AC5068A4CFA693D16 /* BasePreprocessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7A2FEF421C1435349C9D1498204F9591 /* CAMediaTimingFunction+Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = E6760715F490F37951C940BB69F2C121 /* CAMediaTimingFunction+Hero.m */; };
+		8505F676A1520727D7489B743B4E1641 /* NSArray+HeroModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20DBF6BDBF1A831F21071885F33848 /* NSArray+HeroModifier.m */; };
+		859DD30E3737923E0A787DE5F002E029 /* HeroTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 23818D68C6779AB75D29BA634795E568 /* HeroTypes.m */; };
+		85ECAAC23D1C0D645E4DD3B150BAC21B /* CascadePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = EC8EC6AB79631B09CC90B971DD0E4787 /* CascadePreprocessor.m */; };
+		889B9B7056CD4CA7F57EA28DD1EEF730 /* HeroTargetState.m in Sources */ = {isa = PBXBuildFile; fileRef = 216F21D07886C0D9BBAE3DBBC1525BA4 /* HeroTargetState.m */; };
+		89117FC0E865C72B66CE2075F4A3ADBE /* MatchPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FDD9E1A58B61DB4BB7EF664FB29CA67 /* MatchPreprocessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9011C11CF0C14B342E495B81A464AD7F /* HeroDefaultAnimatorViewContext.h in Headers */ = {isa = PBXBuildFile; fileRef = D651865464D14A711C96A0D32D09ED6A /* HeroDefaultAnimatorViewContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		908EB3C71C73B8EAD5A3FDF17E31C921 /* HeroModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 46142BEF7D7DF67938187F6131256702 /* HeroModifier.m */; };
+		9801958D07B5CBF2255903828A21CF3C /* MatchPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 62446AC9C99976C0A9C63237DC97685C /* MatchPreprocessor.m */; };
+		A6C675E19E123CB95EA62996644713FD /* UIKit+Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 050497573C8C7A357D09A44258569B8F /* UIKit+Hero.m */; };
+		B9000F878161A52DCE3F62285D8F0A4B /* HeroContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B96EA2909F4FF0E30D6E0C79D466D57C /* HeroContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B9D5FF8A1C8B1F3C093D7CE19EC3F5BD /* CAMediaTimingFunction+Hero.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F11B671F97D8B529B1F79DEDCAC061 /* CAMediaTimingFunction+Hero.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C40BF95E3578DE6F288FD63C5FF3695E /* HeroModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = E14BE5C9920917A4E4055DF6E9398BCF /* HeroModifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA31F0E35C58A67AB9980126678932F7 /* HeroDefaultAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = BA2C3D5A9D3686E005617EA4FD82B219 /* HeroDefaultAnimator.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D1A90FFF805D273B8FD138ADD2D5A171 /* HeroTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 6508CF9E94E9FDF0832D9B5D948AD392 /* HeroTypes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC0BA14494EC351E38C5064D0B3F100B /* SourcePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B4785EA4A9D9E61908EACB722E1CE361 /* SourcePreprocessor.m */; };
+		E43BEBD4C9D7837309D75CABD136C2CA /* IgnoreSubviewModifiersPreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDBE4CB91AFA49970E83C0A4D43D443 /* IgnoreSubviewModifiersPreprocessor.m */; };
+		EC081C27892D87CF62734579DF72BC0A /* HeroPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = B8ADDF85F47AACD7D68BD847D9B998CE /* HeroPlugin.m */; };
+		EF11D629DEC3C0951146E192E0D3B880 /* HeroTargetState.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DB3E5265DEC3993C69579F60B92A929 /* HeroTargetState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F3CDC8237D55D99403F454DDC3C7BE15 /* IgnoreSubviewModifiersPreprocessor.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BECA819472E645568763073F367151 /* IgnoreSubviewModifiersPreprocessor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A36995B8DD245036CFAA17FA7A8BC0FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2C2C3F0C75EEFD6B361C5A40D57F9B4;
+			remoteInfo = LWHeroOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050497573C8C7A357D09A44258569B8F /* UIKit+Hero.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIKit+Hero.m"; path = "LWHeroOC/Classes/UIKit+Hero.m"; sourceTree = "<group>"; };
+		0C1B9529E5BE162C0FA728750414486C /* HeroDefaultAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroDefaultAnimator.m; path = LWHeroOC/Classes/HeroDefaultAnimator.m; sourceTree = "<group>"; };
+		0F235C965221BCD10EC34251A1DB9C5C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		216F21D07886C0D9BBAE3DBBC1525BA4 /* HeroTargetState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroTargetState.m; path = LWHeroOC/Classes/HeroTargetState.m; sourceTree = "<group>"; };
+		23818D68C6779AB75D29BA634795E568 /* HeroTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroTypes.m; path = LWHeroOC/Classes/HeroTypes.m; sourceTree = "<group>"; };
+		3398881DD1D18F830283F638ACCC8210 /* CALayer+Hero.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+Hero.m"; path = "LWHeroOC/Classes/CALayer+Hero.m"; sourceTree = "<group>"; };
+		38F29BE59BA9573BE6F29144E38C742B /* Pods-LWHeroOC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWHeroOC_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3A59C44818B509D098766296A6CD1946 /* Pods-LWHeroOC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LWHeroOC_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		45F11B671F97D8B529B1F79DEDCAC061 /* CAMediaTimingFunction+Hero.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAMediaTimingFunction+Hero.h"; path = "LWHeroOC/Classes/CAMediaTimingFunction+Hero.h"; sourceTree = "<group>"; };
+		46142BEF7D7DF67938187F6131256702 /* HeroModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroModifier.m; path = LWHeroOC/Classes/HeroModifier.m; sourceTree = "<group>"; };
+		5E20DBF6BDBF1A831F21071885F33848 /* NSArray+HeroModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+HeroModifier.m"; path = "LWHeroOC/Classes/NSArray+HeroModifier.m"; sourceTree = "<group>"; };
+		61814B8F1F48A472AC3A0C93D43CD80F /* LWHeroOC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LWHeroOC-dummy.m"; sourceTree = "<group>"; };
+		62446AC9C99976C0A9C63237DC97685C /* MatchPreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MatchPreprocessor.m; path = LWHeroOC/Classes/MatchPreprocessor.m; sourceTree = "<group>"; };
+		6508CF9E94E9FDF0832D9B5D948AD392 /* HeroTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroTypes.h; path = LWHeroOC/Classes/HeroTypes.h; sourceTree = "<group>"; };
+		6767438AD99820704EEB548D6B475530 /* LWHeroOC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWHeroOC.debug.xcconfig; sourceTree = "<group>"; };
+		67FD9242768A5EC06B31EB817348FA22 /* HeroDefaultAnimatorViewContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroDefaultAnimatorViewContext.m; path = LWHeroOC/Classes/HeroDefaultAnimatorViewContext.m; sourceTree = "<group>"; };
+		69803787AC6470807FC242BD3C1E9340 /* LWHeroOC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LWHeroOC.release.xcconfig; sourceTree = "<group>"; };
+		837175823F7CBB61F31CDFFD39E6436C /* Pods-LWHeroOC_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LWHeroOC_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89631AF6FA1C03266AFB1807FAA0EA7C /* CascadePreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CascadePreprocessor.h; path = LWHeroOC/Classes/CascadePreprocessor.h; sourceTree = "<group>"; };
+		8DB3E5265DEC3993C69579F60B92A929 /* HeroTargetState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroTargetState.h; path = LWHeroOC/Classes/HeroTargetState.h; sourceTree = "<group>"; };
+		8FDD9E1A58B61DB4BB7EF664FB29CA67 /* MatchPreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MatchPreprocessor.h; path = LWHeroOC/Classes/MatchPreprocessor.h; sourceTree = "<group>"; };
+		92FD0AEEE9819304324DA1399ED82E4C /* NSArray+HeroModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+HeroModifier.h"; path = "LWHeroOC/Classes/NSArray+HeroModifier.h"; sourceTree = "<group>"; };
+		96AE3257D720FD02F16BDF1A489738DA /* Pods-LWHeroOC_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LWHeroOC_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		98682679507835CC1B1C56E150725950 /* UIKit+Hero.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+Hero.h"; path = "LWHeroOC/Classes/UIKit+Hero.h"; sourceTree = "<group>"; };
+		987228C378C6BAD032DAD73BCEE3FC22 /* Hero.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Hero.m; path = LWHeroOC/Classes/Hero.m; sourceTree = "<group>"; };
+		9BE039DA6093DDD5BA757E34FB2CB967 /* CALayer+Hero.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+Hero.h"; path = "LWHeroOC/Classes/CALayer+Hero.h"; sourceTree = "<group>"; };
+		9C06F65982643E936B534EB138CD8701 /* BasePreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BasePreprocessor.m; path = LWHeroOC/Classes/BasePreprocessor.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A82A5DB656EE64D889F8D3B59C192F31 /* HeroContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroContext.m; path = LWHeroOC/Classes/HeroContext.m; sourceTree = "<group>"; };
+		ABDBE4CB91AFA49970E83C0A4D43D443 /* IgnoreSubviewModifiersPreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IgnoreSubviewModifiersPreprocessor.m; path = LWHeroOC/Classes/IgnoreSubviewModifiersPreprocessor.m; sourceTree = "<group>"; };
+		B4785EA4A9D9E61908EACB722E1CE361 /* SourcePreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SourcePreprocessor.m; path = LWHeroOC/Classes/SourcePreprocessor.m; sourceTree = "<group>"; };
+		B8ADDF85F47AACD7D68BD847D9B998CE /* HeroPlugin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HeroPlugin.m; path = LWHeroOC/Classes/HeroPlugin.m; sourceTree = "<group>"; };
+		B96EA2909F4FF0E30D6E0C79D466D57C /* HeroContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroContext.h; path = LWHeroOC/Classes/HeroContext.h; sourceTree = "<group>"; };
+		BA2C3D5A9D3686E005617EA4FD82B219 /* HeroDefaultAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroDefaultAnimator.h; path = LWHeroOC/Classes/HeroDefaultAnimator.h; sourceTree = "<group>"; };
+		BEB252DAC292244C81D0665DC0F3C4BB /* LWHeroOC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LWHeroOC-prefix.pch"; sourceTree = "<group>"; };
+		C22A3C691138BB9F5DD92C2CC73EB2E7 /* libLWHeroOC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libLWHeroOC.a; path = libLWHeroOC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E24CB8F2B78CE8446E1CC98A607C94 /* HeroPlugin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroPlugin.h; path = LWHeroOC/Classes/HeroPlugin.h; sourceTree = "<group>"; };
+		CFFA1DF61C5A342C2BDFC926122C5F4B /* SourcePreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SourcePreprocessor.h; path = LWHeroOC/Classes/SourcePreprocessor.h; sourceTree = "<group>"; };
+		D4B52E2041DF6F1AC5068A4CFA693D16 /* BasePreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BasePreprocessor.h; path = LWHeroOC/Classes/BasePreprocessor.h; sourceTree = "<group>"; };
+		D651865464D14A711C96A0D32D09ED6A /* HeroDefaultAnimatorViewContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroDefaultAnimatorViewContext.h; path = LWHeroOC/Classes/HeroDefaultAnimatorViewContext.h; sourceTree = "<group>"; };
+		D6F0563B758DA349134094DF3FF4ABAC /* LWHeroOC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LWHeroOC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E14BE5C9920917A4E4055DF6E9398BCF /* HeroModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HeroModifier.h; path = LWHeroOC/Classes/HeroModifier.h; sourceTree = "<group>"; };
+		E6760715F490F37951C940BB69F2C121 /* CAMediaTimingFunction+Hero.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAMediaTimingFunction+Hero.m"; path = "LWHeroOC/Classes/CAMediaTimingFunction+Hero.m"; sourceTree = "<group>"; };
+		E876E3BB8E2F47BE9CF8AD89C4D6D50C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EC54A8462C975172A06A8680AC82E70F /* Pods-LWHeroOC_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LWHeroOC_Example-dummy.m"; sourceTree = "<group>"; };
+		EC8EC6AB79631B09CC90B971DD0E4787 /* CascadePreprocessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CascadePreprocessor.m; path = LWHeroOC/Classes/CascadePreprocessor.m; sourceTree = "<group>"; };
+		EEF81B8F75F37C7E51134F361515EC5C /* libPods-LWHeroOC_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-LWHeroOC_Example.a"; path = "libPods-LWHeroOC_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0AFB1D77EEC2388261E1A236BD01DCC /* Hero.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = LWHeroOC/Classes/Hero.h; sourceTree = "<group>"; };
+		F7BECA819472E645568763073F367151 /* IgnoreSubviewModifiersPreprocessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IgnoreSubviewModifiersPreprocessor.h; path = LWHeroOC/Classes/IgnoreSubviewModifiersPreprocessor.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14C275A417AADE6B3C9971CD0E38AA7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F03CB28DA70185975E2A48D6C237B937 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		068B3AEFEC040729966A8AB8BF4A88FE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0F235C965221BCD10EC34251A1DB9C5C /* LICENSE */,
+				D6F0563B758DA349134094DF3FF4ABAC /* LWHeroOC.podspec */,
+				E876E3BB8E2F47BE9CF8AD89C4D6D50C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		27844AEDCBBDAF6F72F0FD31737BDCEB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B1B577F26D9CC6E6FBB01C0833E3350 /* LWHeroOC */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		34AA113A3E399812E301CD10CB29397F /* Pods-LWHeroOC_Example */ = {
+			isa = PBXGroup;
+			children = (
+				837175823F7CBB61F31CDFFD39E6436C /* Pods-LWHeroOC_Example-acknowledgements.markdown */,
+				96AE3257D720FD02F16BDF1A489738DA /* Pods-LWHeroOC_Example-acknowledgements.plist */,
+				EC54A8462C975172A06A8680AC82E70F /* Pods-LWHeroOC_Example-dummy.m */,
+				3A59C44818B509D098766296A6CD1946 /* Pods-LWHeroOC_Example.debug.xcconfig */,
+				38F29BE59BA9573BE6F29144E38C742B /* Pods-LWHeroOC_Example.release.xcconfig */,
+			);
+			name = "Pods-LWHeroOC_Example";
+			path = "Target Support Files/Pods-LWHeroOC_Example";
+			sourceTree = "<group>";
+		};
+		4A1C20E3E2720E5DFA95A615E5908722 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34AA113A3E399812E301CD10CB29397F /* Pods-LWHeroOC_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4B1B577F26D9CC6E6FBB01C0833E3350 /* LWHeroOC */ = {
+			isa = PBXGroup;
+			children = (
+				D4B52E2041DF6F1AC5068A4CFA693D16 /* BasePreprocessor.h */,
+				9C06F65982643E936B534EB138CD8701 /* BasePreprocessor.m */,
+				9BE039DA6093DDD5BA757E34FB2CB967 /* CALayer+Hero.h */,
+				3398881DD1D18F830283F638ACCC8210 /* CALayer+Hero.m */,
+				45F11B671F97D8B529B1F79DEDCAC061 /* CAMediaTimingFunction+Hero.h */,
+				E6760715F490F37951C940BB69F2C121 /* CAMediaTimingFunction+Hero.m */,
+				89631AF6FA1C03266AFB1807FAA0EA7C /* CascadePreprocessor.h */,
+				EC8EC6AB79631B09CC90B971DD0E4787 /* CascadePreprocessor.m */,
+				F0AFB1D77EEC2388261E1A236BD01DCC /* Hero.h */,
+				987228C378C6BAD032DAD73BCEE3FC22 /* Hero.m */,
+				B96EA2909F4FF0E30D6E0C79D466D57C /* HeroContext.h */,
+				A82A5DB656EE64D889F8D3B59C192F31 /* HeroContext.m */,
+				BA2C3D5A9D3686E005617EA4FD82B219 /* HeroDefaultAnimator.h */,
+				0C1B9529E5BE162C0FA728750414486C /* HeroDefaultAnimator.m */,
+				D651865464D14A711C96A0D32D09ED6A /* HeroDefaultAnimatorViewContext.h */,
+				67FD9242768A5EC06B31EB817348FA22 /* HeroDefaultAnimatorViewContext.m */,
+				E14BE5C9920917A4E4055DF6E9398BCF /* HeroModifier.h */,
+				46142BEF7D7DF67938187F6131256702 /* HeroModifier.m */,
+				C5E24CB8F2B78CE8446E1CC98A607C94 /* HeroPlugin.h */,
+				B8ADDF85F47AACD7D68BD847D9B998CE /* HeroPlugin.m */,
+				8DB3E5265DEC3993C69579F60B92A929 /* HeroTargetState.h */,
+				216F21D07886C0D9BBAE3DBBC1525BA4 /* HeroTargetState.m */,
+				6508CF9E94E9FDF0832D9B5D948AD392 /* HeroTypes.h */,
+				23818D68C6779AB75D29BA634795E568 /* HeroTypes.m */,
+				F7BECA819472E645568763073F367151 /* IgnoreSubviewModifiersPreprocessor.h */,
+				ABDBE4CB91AFA49970E83C0A4D43D443 /* IgnoreSubviewModifiersPreprocessor.m */,
+				8FDD9E1A58B61DB4BB7EF664FB29CA67 /* MatchPreprocessor.h */,
+				62446AC9C99976C0A9C63237DC97685C /* MatchPreprocessor.m */,
+				92FD0AEEE9819304324DA1399ED82E4C /* NSArray+HeroModifier.h */,
+				5E20DBF6BDBF1A831F21071885F33848 /* NSArray+HeroModifier.m */,
+				CFFA1DF61C5A342C2BDFC926122C5F4B /* SourcePreprocessor.h */,
+				B4785EA4A9D9E61908EACB722E1CE361 /* SourcePreprocessor.m */,
+				98682679507835CC1B1C56E150725950 /* UIKit+Hero.h */,
+				050497573C8C7A357D09A44258569B8F /* UIKit+Hero.m */,
+				068B3AEFEC040729966A8AB8BF4A88FE /* Pod */,
+				B83FE2D06CC8A6FE9B655DFD39C20CAF /* Support Files */,
+			);
+			name = LWHeroOC;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		838F1B989B63AEFE75BA886F62542FCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C22A3C691138BB9F5DD92C2CC73EB2E7 /* libLWHeroOC.a */,
+				EEF81B8F75F37C7E51134F361515EC5C /* libPods-LWHeroOC_Example.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B83FE2D06CC8A6FE9B655DFD39C20CAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61814B8F1F48A472AC3A0C93D43CD80F /* LWHeroOC-dummy.m */,
+				BEB252DAC292244C81D0665DC0F3C4BB /* LWHeroOC-prefix.pch */,
+				6767438AD99820704EEB548D6B475530 /* LWHeroOC.debug.xcconfig */,
+				69803787AC6470807FC242BD3C1E9340 /* LWHeroOC.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LWHeroOC";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				27844AEDCBBDAF6F72F0FD31737BDCEB /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				838F1B989B63AEFE75BA886F62542FCD /* Products */,
+				4A1C20E3E2720E5DFA95A615E5908722 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EF0E5AE027750B412D6E24CA6289474 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781465E26DDED301436CC25CA61821AD /* BasePreprocessor.h in Headers */,
+				2D5F7AB4F3B0CCA68B254954A6436C00 /* CALayer+Hero.h in Headers */,
+				B9D5FF8A1C8B1F3C093D7CE19EC3F5BD /* CAMediaTimingFunction+Hero.h in Headers */,
+				3632E1B56004222BAFCBE7EE1E4A7137 /* CascadePreprocessor.h in Headers */,
+				4912B0F6355D464A0960A1425BF20274 /* Hero.h in Headers */,
+				B9000F878161A52DCE3F62285D8F0A4B /* HeroContext.h in Headers */,
+				CA31F0E35C58A67AB9980126678932F7 /* HeroDefaultAnimator.h in Headers */,
+				9011C11CF0C14B342E495B81A464AD7F /* HeroDefaultAnimatorViewContext.h in Headers */,
+				C40BF95E3578DE6F288FD63C5FF3695E /* HeroModifier.h in Headers */,
+				4DE5C74B96B6D292D86E3297D0A1AAA6 /* HeroPlugin.h in Headers */,
+				EF11D629DEC3C0951146E192E0D3B880 /* HeroTargetState.h in Headers */,
+				D1A90FFF805D273B8FD138ADD2D5A171 /* HeroTypes.h in Headers */,
+				F3CDC8237D55D99403F454DDC3C7BE15 /* IgnoreSubviewModifiersPreprocessor.h in Headers */,
+				89117FC0E865C72B66CE2075F4A3ADBE /* MatchPreprocessor.h in Headers */,
+				3592D7E20B1C96CA936805C135C7B3A5 /* NSArray+HeroModifier.h in Headers */,
+				117F72966450C8C93A7D04842ECB4E8F /* SourcePreprocessor.h in Headers */,
+				582B94609758C96DD4F964301446B367 /* UIKit+Hero.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFCFC567088A39C3F00E73745C9CC6BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A2C2C3F0C75EEFD6B361C5A40D57F9B4 /* LWHeroOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1DBDF9FC9BCA3A09AB1C1012D3DD3D /* Build configuration list for PBXNativeTarget "LWHeroOC" */;
+			buildPhases = (
+				1EF0E5AE027750B412D6E24CA6289474 /* Headers */,
+				CCD7E286E0E50838C38B37621CC183C7 /* Sources */,
+				14C275A417AADE6B3C9971CD0E38AA7B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LWHeroOC;
+			productName = LWHeroOC;
+			productReference = C22A3C691138BB9F5DD92C2CC73EB2E7 /* libLWHeroOC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CBAA7EF53AA6CCEEC7F74EDC8478ECE8 /* Pods-LWHeroOC_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB888382D381B4A5AA15B19199A9D4CA /* Build configuration list for PBXNativeTarget "Pods-LWHeroOC_Example" */;
+			buildPhases = (
+				BFCFC567088A39C3F00E73745C9CC6BE /* Headers */,
+				A3E905FDA6180FF8D1A6F3579CBB425F /* Sources */,
+				F03CB28DA70185975E2A48D6C237B937 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8201241DD32395FC3C0D6E2078BB17A /* PBXTargetDependency */,
+			);
+			name = "Pods-LWHeroOC_Example";
+			productName = "Pods-LWHeroOC_Example";
+			productReference = EEF81B8F75F37C7E51134F361515EC5C /* libPods-LWHeroOC_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 838F1B989B63AEFE75BA886F62542FCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2C2C3F0C75EEFD6B361C5A40D57F9B4 /* LWHeroOC */,
+				CBAA7EF53AA6CCEEC7F74EDC8478ECE8 /* Pods-LWHeroOC_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3E905FDA6180FF8D1A6F3579CBB425F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03CA7752500B4C1B109F3B3B2AA6C00D /* Pods-LWHeroOC_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCD7E286E0E50838C38B37621CC183C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FDA4AD08A5790C8B19EB6B285FA80EE /* BasePreprocessor.m in Sources */,
+				046E044BE819CA8F9E9F035B2671C6AD /* CALayer+Hero.m in Sources */,
+				7A2FEF421C1435349C9D1498204F9591 /* CAMediaTimingFunction+Hero.m in Sources */,
+				85ECAAC23D1C0D645E4DD3B150BAC21B /* CascadePreprocessor.m in Sources */,
+				3B4140C77F7ABCA4C0CEA76DC1CA4517 /* Hero.m in Sources */,
+				180C68AEB276C5E3980723080DD64BA1 /* HeroContext.m in Sources */,
+				2E4F02EDD7C3E5EB381181113C875545 /* HeroDefaultAnimator.m in Sources */,
+				27E4285773C9E9E62A47A98DF370E26A /* HeroDefaultAnimatorViewContext.m in Sources */,
+				908EB3C71C73B8EAD5A3FDF17E31C921 /* HeroModifier.m in Sources */,
+				EC081C27892D87CF62734579DF72BC0A /* HeroPlugin.m in Sources */,
+				889B9B7056CD4CA7F57EA28DD1EEF730 /* HeroTargetState.m in Sources */,
+				859DD30E3737923E0A787DE5F002E029 /* HeroTypes.m in Sources */,
+				E43BEBD4C9D7837309D75CABD136C2CA /* IgnoreSubviewModifiersPreprocessor.m in Sources */,
+				46C5A7C28DD27D357780E3251D1BD658 /* LWHeroOC-dummy.m in Sources */,
+				9801958D07B5CBF2255903828A21CF3C /* MatchPreprocessor.m in Sources */,
+				8505F676A1520727D7489B743B4E1641 /* NSArray+HeroModifier.m in Sources */,
+				DC0BA14494EC351E38C5064D0B3F100B /* SourcePreprocessor.m in Sources */,
+				A6C675E19E123CB95EA62996644713FD /* UIKit+Hero.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8201241DD32395FC3C0D6E2078BB17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LWHeroOC;
+			target = A2C2C3F0C75EEFD6B361C5A40D57F9B4 /* LWHeroOC */;
+			targetProxy = A36995B8DD245036CFAA17FA7A8BC0FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9CABB6ACFB7A86BE29F77ED2466241F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6767438AD99820704EEB548D6B475530 /* LWHeroOC.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LWHeroOC/LWHeroOC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LWHeroOC;
+				PRODUCT_NAME = LWHeroOC;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C04090E677F61DE7DEEED504F58CFE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F29BE59BA9573BE6F29144E38C742B /* Pods-LWHeroOC_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C471A4F6BE79584B50990B1D50205322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69803787AC6470807FC242BD3C1E9340 /* LWHeroOC.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/LWHeroOC/LWHeroOC-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = LWHeroOC;
+				PRODUCT_NAME = LWHeroOC;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6AC27CC6012F0D4B1D5C9D1E40FF21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A59C44818B509D098766296A6CD1946 /* Pods-LWHeroOC_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B1DBDF9FC9BCA3A09AB1C1012D3DD3D /* Build configuration list for PBXNativeTarget "LWHeroOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CABB6ACFB7A86BE29F77ED2466241F3 /* Debug */,
+				C471A4F6BE79584B50990B1D50205322 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB888382D381B4A5AA15B19199A9D4CA /* Build configuration list for PBXNativeTarget "Pods-LWHeroOC_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6AC27CC6012F0D4B1D5C9D1E40FF21F /* Debug */,
+				C04090E677F61DE7DEEED504F58CFE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
