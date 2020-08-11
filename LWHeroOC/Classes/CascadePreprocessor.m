@@ -10,6 +10,7 @@
 
 @interface CascadePreprocessor ()
 
+@property (nonatomic, assign) CGPoint center;
 @property (nonatomic, assign) CascadeDirection direction;
 @property (nonatomic, assign) NSComparator comparator;
 
@@ -17,57 +18,83 @@
 
 @implementation CascadePreprocessor
 
-- (instancetype)initWithDirectionString:(NSString *)string {
+- (instancetype)initWithDirectionString:(NSString *)string center:(NSValue *)center {
     
     if (self = [super init]) {
-        
-        __weak typeof(self) weakSelf = self;
-        self.comparator = ^NSComparisonResult(UIView *view1, UIView *view2) {
-            switch (weakSelf.direction) {
-                case CascadeDirectionTopToBottom:
-                    return CGRectGetMinY(view1.frame) < CGRectGetMinY(view2.frame);
-                    break;
-                case CascadeDirectionBottomToTop:
-                    return (CGRectGetMaxY(view1.frame) == CGRectGetMaxY(view2.frame) ?
-                            CGRectGetMaxX(view1.frame) > CGRectGetMaxX(view2.frame) :
-                            CGRectGetMaxY(view1.frame) > CGRectGetMaxY(view2.frame));
-                    break;
-                case CascadeDirectionLeftToRight:
-                    return CGRectGetMinX(view1.frame) < CGRectGetMinX(view2.frame);
-                    break;
-                case CascadeDirectionRightToLeft:
-                    return CGRectGetMaxX(view1.frame) < CGRectGetMaxX(view2.frame);
-                    break;
-                case CascadeDirectionRadial:
-                    return ([weakSelf distanceFrom:view1.center to:weakSelf.center] <
-                            [weakSelf distanceFrom:view2.center to:weakSelf.center]);
-                    break;
-                case CascadeDirectionInverseRadial:
-                    return ([weakSelf distanceFrom:view2.center to:weakSelf.center] <
-                            [weakSelf distanceFrom:view1.center to:weakSelf.center]);
-                    break;
-                default:
-                    break;
-            }
-        };
         
         if ([string isEqualToString:@"bottomToTop"]) {
             self.direction = CascadeDirectionBottomToTop;
             return self;
         }
         if ([string isEqualToString:@"leftToRight"]) {
-            self.direction = CascadeDirectionBottomToTop;
+            self.direction = CascadeDirectionLeftToRight;
             return self;
         }
         if ([string isEqualToString:@"rightToLeft"]) {
-            self.direction = CascadeDirectionBottomToTop;
+            self.direction = CascadeDirectionRightToLeft;
             return self;
         }
         if ([string isEqualToString:@"topToBottom"]) {
-            self.direction = CascadeDirectionBottomToTop;
+            self.direction = CascadeDirectionTopToBottom;
+            return self;
+        }
+        if ([string isEqualToString:@"radial"]) {
+            self.direction = CascadeDirectionRadial;
+            self.center = [center CGPointValue];
+            return self;
+        }
+        if ([string isEqualToString:@"inverseRadial"]) {
+            self.direction = CascadeDirectionInverseRadial;
+            self.center = [center CGPointValue];
             return self;
         }
         return nil;
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithDirectionType:(CascadeDirection)type center:(NSValue *)center {
+    
+    if (self = [super init]) {
+        
+        switch (type) {
+            case CascadeDirectionBottomToTop: {
+                self.direction = CascadeDirectionBottomToTop;
+                return self;
+            }
+                break;
+            case CascadeDirectionLeftToRight: {
+                self.direction = CascadeDirectionLeftToRight;
+                return self;
+            }
+                break;
+            case CascadeDirectionRightToLeft: {
+                self.direction = CascadeDirectionRightToLeft;
+                return self;
+            }
+                break;
+            case CascadeDirectionTopToBottom: {
+                self.direction = CascadeDirectionTopToBottom;
+                return self;
+            }
+                break;
+            case CascadeDirectionRadial: {
+                self.direction = CascadeDirectionRadial;
+                self.center = [center CGPointValue];
+                return self;
+            }
+                break;
+            case CascadeDirectionInverseRadial: {
+                self.direction = CascadeDirectionInverseRadial;
+                self.center = [center CGPointValue];
+                return self;
+            }
+                break;
+                
+            default:
+                break;
+        }
     }
     
     return self;
@@ -125,6 +152,43 @@
             }
         }
     }];
+}
+
+#pragma mark - Getter
+- (NSComparator)comparator {
+    
+    if (!_comparator) {
+        __weak typeof(self) weakSelf = self;
+        _comparator = ^NSComparisonResult(UIView *view1, UIView *view2) {
+            switch (weakSelf.direction) {
+                case CascadeDirectionTopToBottom:
+                    return CGRectGetMinY(view1.frame) < CGRectGetMinY(view2.frame);
+                    break;
+                case CascadeDirectionBottomToTop:
+                    return (CGRectGetMaxY(view1.frame) == CGRectGetMaxY(view2.frame) ?
+                            CGRectGetMaxX(view1.frame) > CGRectGetMaxX(view2.frame) :
+                            CGRectGetMaxY(view1.frame) > CGRectGetMaxY(view2.frame));
+                    break;
+                case CascadeDirectionLeftToRight:
+                    return CGRectGetMinX(view1.frame) < CGRectGetMinX(view2.frame);
+                    break;
+                case CascadeDirectionRightToLeft:
+                    return CGRectGetMaxX(view1.frame) < CGRectGetMaxX(view2.frame);
+                    break;
+                case CascadeDirectionRadial:
+                    return ([weakSelf distanceFrom:view1.center to:weakSelf.center] <
+                            [weakSelf distanceFrom:view2.center to:weakSelf.center]);
+                    break;
+                case CascadeDirectionInverseRadial:
+                    return ([weakSelf distanceFrom:view2.center to:weakSelf.center] <
+                            [weakSelf distanceFrom:view1.center to:weakSelf.center]);
+                    break;
+                default:
+                    break;
+            }
+        };
+    }
+    return _comparator;
 }
 
 #pragma mark - Private

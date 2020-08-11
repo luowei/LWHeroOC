@@ -19,11 +19,18 @@ typedef NS_ENUM(NSUInteger, CascadeDirection) {
 
 @interface CascadePreprocessor : BasePreprocessor
 
-@property (nonatomic, assign) CGPoint center;   //When using CascadeDirectionRadial/CascadeDirectionInverseRadial Direction, center value must be set
+@property (nonatomic, assign, readonly) CGPoint center;
 @property (nonatomic, assign, readonly) CascadeDirection direction;
 
+// When using CascadeDirectionRadial/CascadeDirectionInverseRadial Direction, center value must be set
+// Else, set center as nil
+- (instancetype)initWithDirectionType:(CascadeDirection)type center:(NSValue *)center;
 
-- (instancetype)initWithDirectionString:(NSString *)string;
+// When using CascadeDirectionRadial/CascadeDirectionInverseRadial Direction, center value must be set
+// Else, set center as nil
+// string: bottomToTop, leftToRight, rightToLeft, topToBottom, radial or inverseRadial
+- (instancetype)initWithDirectionString:(NSString *)string center:(NSValue *)center;
+
 
 - (void)processFromViews:(NSArray *)fromviews toViews:(NSArray *)toviews;
 

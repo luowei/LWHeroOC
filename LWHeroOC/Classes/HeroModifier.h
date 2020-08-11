@@ -30,6 +30,8 @@ extern const HeroModifierApplyBlock fade;;
 
 @interface HeroModifier (BasicModifiers)
 
++ (HeroModifier *)fade;
+
 /**
  Set the position for the view to animate from/to.
  - Parameters:
@@ -179,7 +181,7 @@ extern const HeroModifierApplyBlock fade;;
  - Parameters:
  - recursive: if false, will only ignore direct subviews' modifiers. default false.
  */
-+ (HeroModifier *)ignoreSubviewModifiers:(NSNumber *)recursive;
++ (HeroModifier *)ignoreSubviewModifiersWithRecursive:(NSNumber *)recursive;
 
 /**
  transition from/to the state of the view with matching heroID
@@ -196,6 +198,12 @@ extern const HeroModifierApplyBlock fade;;
  default is 1.
  */
 + (HeroModifier *)arc:(NSNumber *)intensity;
+
+/**
+ Cascade applys increasing delay modifiers to subviews
+ With Default parameters
+ */
++ (HeroModifier *)cascade;
 
 /**
  Cascade applys increasing delay modifiers to subviews

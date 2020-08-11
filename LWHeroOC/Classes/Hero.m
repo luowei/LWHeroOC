@@ -271,12 +271,20 @@ typedef void(^HeroUpdateBlock)();
     UIViewController *tvc = self.toViewController;
     if (fvc && tvc) {
         [self closureProcessForHeroDelegate:fvc closure:^(id<HeroViewControllerDelegate> delegate) {
-            [delegate heroWillStartTransition];
-            [delegate heroWillStartAnimatingTo:tvc];
+            if ([delegate respondsToSelector:@selector(heroWillStartTransition)]) {
+                [delegate heroWillStartTransition];
+            }
+            if ([delegate respondsToSelector:@selector(heroWillStartAnimatingTo:)]) {
+                [delegate heroWillStartAnimatingTo:tvc];
+            }
         }];
         [self closureProcessForHeroDelegate:tvc closure:^(id<HeroViewControllerDelegate> delegate) {
-            [delegate heroWillStartTransition];
-            [delegate heroWillStartAnimatingFrom:fvc];
+            if ([delegate respondsToSelector:@selector(heroWillStartTransition)]) {
+                [delegate heroWillStartTransition];
+            }
+            if ([delegate respondsToSelector:@selector(heroWillStartAnimatingFrom:)]) {
+                [delegate heroWillStartAnimatingFrom:fvc];
+            }
         }];
     }
     
@@ -351,7 +359,7 @@ typedef void(^HeroUpdateBlock)();
     
     if (!skipDefaultAnimation) {
         // if no animator can animate toView & fromView, set the effect to fade // i.e. default effect
-        HeroModifier *fadeModifier = [[HeroModifier alloc] initWithApplyFunction:fade];
+        HeroModifier *fadeModifier = [HeroModifier fade];
         [self.context setState:[[HeroTargetState alloc] initWithModifiers:@[fadeModifier]] toView:self.toView];
         [((NSMutableArray *)[animatingViews firstObject][1]) insertObject:self.toView atIndex:0];
     }
@@ -473,13 +481,21 @@ typedef void(^HeroUpdateBlock)();
     
     if (fvc && tvc) {
         [self closureProcessForHeroDelegate:fvc closure:^(id<HeroViewControllerDelegate> delegate) {
-            [delegate heroDidEndAnimatingTo:tvc];
-            [delegate heroDidEndTransition];
+            if ([delegate respondsToSelector:@selector(heroDidEndAnimatingTo:)]) {
+                [delegate heroDidEndAnimatingTo:tvc];
+            }
+            if ([delegate respondsToSelector:@selector(heroDidEndTransition)]) {
+                [delegate heroDidEndTransition];
+            }
         }];
         
         [self closureProcessForHeroDelegate:tvc closure:^(id<HeroViewControllerDelegate> delegate) {
-            [delegate heroDidEndAnimatingFrom:fvc];
-            [delegate heroDidEndTransition];
+            if ([delegate respondsToSelector:@selector(heroDidEndAnimatingFrom:)]) {
+                [delegate heroDidEndAnimatingFrom:fvc];
+            }
+            if ([delegate respondsToSelector:@selector(heroDidEndTransition)]) {
+                [delegate heroDidEndTransition];
+            }
         }];
     }
     

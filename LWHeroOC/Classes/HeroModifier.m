@@ -31,6 +31,10 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
 
 @implementation HeroModifier (BasicModifiers)
 
++ (HeroModifier *)fade {
+    return [[HeroModifier alloc] initWithApplyFunction:fade];
+}
+
 + (HeroModifier *)position:(NSValue *)position {
     return [[HeroModifier alloc] initWithApplyFunction:^(HeroTargetState *targetState) {
         targetState.position = position;
@@ -126,7 +130,7 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
 @implementation HeroModifier (OtherModifiers)
 
 + (HeroModifier *)ignoreSubviewModifiers {
-    return [self ignoreSubviewModifiers:@(NO)];
+    return [self ignoreSubviewModifiersWithRecursive:@(NO)];
 }
 
 + (HeroModifier *)arc {
@@ -149,7 +153,7 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
     }];
 }
 
-+ (HeroModifier *)ignoreSubviewModifiers:(NSNumber *)recursive {
++ (HeroModifier *)ignoreSubviewModifiersWithRecursive:(NSNumber *)recursive {
     return [[HeroModifier alloc] initWithApplyFunction:^(HeroTargetState *targetState) {
         targetState.ignoreSubviewModifiers = recursive;
     }];
@@ -265,7 +269,7 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
     if ([name isEqualToString:@"cascade"]) {
         CascadeDirection cascadeDirection = CascadeDirectionTopToBottom;
         if ([parameters[1] isKindOfClass:[NSString class]]) {
-            CascadePreprocessor * cascadePreprocessor = [[CascadePreprocessor alloc] initWithDirectionString:parameters[1]];
+            CascadePreprocessor * cascadePreprocessor = [[CascadePreprocessor alloc] initWithDirectionString:parameters[1] center:nil];
             cascadeDirection = cascadePreprocessor.direction;
         }
         modifier = [self cascadeWithDelta:[parameters getFloatAtIndex:0] ? [parameters getFloatAtIndex:0] : 0.02 direction:cascadeDirection delayMatchedViews:[parameters[2] boolValue] ? [parameters[2] boolValue] : NO];
@@ -283,7 +287,7 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
     }
     
     if ([name isEqualToString:@"ignoreSubviewModifiers"]) {
-        modifier = [self ignoreSubviewModifiers:@([parameters getBoolAtIndex:0]) ? @([parameters getBoolAtIndex:0]) : @(NO)];
+        modifier = [self ignoreSubviewModifiersWithRecursive:@([parameters getBoolAtIndex:0]) ? @([parameters getBoolAtIndex:0]) : @(NO)];
     }
     
     if ([name isEqualToString:@"zPosition"]) {
