@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LWHeroOC_Example' do
+  pod 'LWHeroOC', :path => '../'
+
+  target 'LWHeroOC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
