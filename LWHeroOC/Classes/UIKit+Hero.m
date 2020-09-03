@@ -10,8 +10,9 @@
 #import "Hero.h"
 #import <objc/runtime.h>
 
-static NSString *parameterRegex = @"(?:\\-?\\d+(\\.?\\d+)?)|\\w+";
-static NSString *modifiersRegex = @"(\\w+)(?:\\(([^\\)]*)\\))?";
+//多个modifier的形态：cascade(0.02,topToBottom,0) source(albumArt) scale(0.5) translate(200, 0) fade zPosition(3) useGlobalCoordinateSpace
+static NSString *parameterRegex = @"(?:\\-?\\d+(\\.?\\d+)?)|\\w+";  //匹配有理数或字符串
+static NSString *modifiersRegex = @"(\\w+)(?:\\(([^\\)]*)\\))?";  //匹配 scale(0.5) 或 fade
 
 struct AssociatedKeys {
     __unsafe_unretained NSString *HeroID;

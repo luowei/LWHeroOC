@@ -103,7 +103,7 @@ static NSString * const reuseIdentifier = @"item";
     } else {
         self.tableView.heroModifiers = @[[HeroModifier cascade]];
     }
-    
+
     ImageViewController *vc = (ImageViewController *)viewController;
     if ([vc isKindOfClass:[ImageViewController class]]) {
         NSIndexPath *originalCellIndex = vc.selectedIndex;

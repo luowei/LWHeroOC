@@ -265,7 +265,8 @@ const HeroModifierApplyBlock fade = ^(HeroTargetState *targetState) {
     if ([name isEqualToString:@"arc"]) {
         modifier = [self arc:@([parameters getFloatAtIndex:0] ? [parameters getFloatAtIndex:0] : 1)];
     }
-    
+
+    //cascade形态：cascade(0.02,topToBottom,0)
     if ([name isEqualToString:@"cascade"]) {
         CascadeDirection cascadeDirection = CascadeDirectionTopToBottom;
         if ([parameters[1] isKindOfClass:[NSString class]]) {
