@@ -20,6 +20,11 @@ it, simply add the following line to your Podfile:
 pod 'LWHeroOC'
 ```
 
+**Carthage**
+```ruby
+github "luowei/LWHeroOC"
+```
+
 ## Author
 
 luowei, luowei@wodedata.com
