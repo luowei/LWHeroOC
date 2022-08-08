@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+LWHeroOC，一个Hero动画框架，用于创建类似于Keynote的神奇移动效果动画，此框架基于Hero-ObjectiveC修改完善而来。
+
 ## Requirements
 
 ## Installation
