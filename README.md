@@ -5,7 +5,27 @@
 [![License](https://img.shields.io/cocoapods/l/LWHeroOC.svg?style=flat)](https://cocoapods.org/pods/LWHeroOC)
 [![Platform](https://img.shields.io/cocoapods/p/LWHeroOC.svg?style=flat)](https://cocoapods.org/pods/LWHeroOC)
 
-[中文文档 (Chinese Documentation)](README_ZH.md)
+[English](./README.md) | [中文版](./README_ZH.md)
+
+---
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Usage Examples](#usage-examples)
+- [Advanced Features](#advanced-features)
+- [API Documentation](#api-documentation)
+- [Example Project](#example-project)
+- [Best Practices](#best-practices)
+- [FAQ](#faq)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
 
 ## Introduction
 
@@ -13,7 +33,9 @@ LWHeroOC is an elegant iOS view controller transition animation framework that b
 
 With just a few lines of code and declarative modifiers, you can create complex transition animations including fade, scale, rotate, translate, and their combinations, making your app's user experience more fluid and natural.
 
-## Core Features
+---
+
+## Features
 
 ### Rich Animation Effects
 - **Basic Animations**: Fade, position, size
@@ -35,11 +57,15 @@ With just a few lines of code and declarative modifiers, you can create complex 
 - **Global Coordinate System**: Support for global and local coordinate space transformations
 - **Delegate Callbacks**: Complete animation lifecycle callbacks
 
+---
+
 ## Requirements
 
 - iOS 8.0 or higher
 - Xcode 8.0 or higher
 - Objective-C
+
+---
 
 ## Installation
 
@@ -70,6 +96,8 @@ Then run:
 ```bash
 carthage update
 ```
+
+---
 
 ## Quick Start
 
@@ -113,6 +141,8 @@ Use standard UIKit navigation methods:
 // Dismiss
 [self.navigationController popViewControllerAnimated:YES];
 ```
+
+---
 
 ## Usage Examples
 
@@ -208,9 +238,13 @@ Transition from another view's state:
 view.heroModifiers = @[[HeroModifier source:@"sourceViewID"]];
 ```
 
-## Comprehensive Transition Examples
+---
 
-### Example 1: Image Gallery Transition
+## Advanced Features
+
+### Comprehensive Transition Examples
+
+#### Example 1: Image Gallery Transition
 
 Create smooth transitions between a collection view and detail view:
 
@@ -247,7 +281,7 @@ Create smooth transitions between a collection view and detail view:
 }
 ```
 
-### Example 2: List to Grid Transition
+#### Example 2: List to Grid Transition
 
 Smooth transition between list and grid layouts:
 
@@ -287,7 +321,7 @@ Smooth transition between list and grid layouts:
 }
 ```
 
-### Example 3: Modal Presentation with Background Blur
+#### Example 3: Modal Presentation with Background Blur
 
 ```objective-c
 // In presenting view controller
@@ -321,7 +355,7 @@ Smooth transition between list and grid layouts:
 }
 ```
 
-### Example 4: Radial Cascade from Selected Cell
+#### Example 4: Radial Cascade from Selected Cell
 
 ```objective-c
 // In collection view controller implementing HeroViewControllerDelegate
@@ -340,7 +374,7 @@ Smooth transition between list and grid layouts:
 }
 ```
 
-### Example 5: Navigation Bar Transition
+#### Example 5: Navigation Bar Transition
 
 ```objective-c
 // In source view controller
@@ -362,7 +396,7 @@ Smooth transition between list and grid layouts:
 }
 ```
 
-### Example 6: TableView with Cascade Effect
+#### Example 6: TableView with Cascade Effect
 
 ```objective-c
 - (UITableViewCell *)tableView:(UITableView *)tableView
@@ -381,7 +415,7 @@ Smooth transition between list and grid layouts:
 }
 ```
 
-## Interface Builder Integration
+### Interface Builder Integration
 
 Configure Hero animations directly in Storyboard:
 
@@ -392,7 +426,7 @@ Configure Hero animations directly in Storyboard:
    - `heroModifierString` (String): Configure modifiers using string format, e.g., `"fade translate(100,0) scale(0.5)"`
    - `isHeroEnabled` (Boolean): Enable Hero on view controller
 
-## HeroViewControllerDelegate Callbacks
+### HeroViewControllerDelegate Callbacks
 
 Implement animation lifecycle callbacks:
 
@@ -430,7 +464,7 @@ Implement animation lifecycle callbacks:
 @end
 ```
 
-## Interactive Transitions
+### Interactive Transitions
 
 Hero supports gesture-driven interactive transitions:
 
@@ -454,7 +488,7 @@ Hero supports gesture-driven interactive transitions:
                        toView:view];
 ```
 
-### Progress Monitoring
+#### Progress Monitoring
 
 ```objective-c
 @interface MyViewController () <HeroProgressUpdateObserver>
@@ -475,7 +509,7 @@ Hero supports gesture-driven interactive transitions:
 @end
 ```
 
-### View Controller Replacement
+#### View Controller Replacement
 
 Smoothly replace view controller using Hero animation:
 
@@ -484,7 +518,7 @@ NextViewController *nextVC = [[NextViewController alloc] init];
 [self heroReplaceViewControllerWithNext:nextVC];
 ```
 
-## Plugin System
+### Plugin System
 
 Enable or disable specific plugins:
 
@@ -499,7 +533,50 @@ Enable or disable specific plugins:
 BOOL enabled = [Hero isEnabledPlugin:[MyCustomPlugin class]];
 ```
 
-## Complete API Documentation
+### Custom Animator
+
+Create custom animators by implementing the `HeroAnimator` protocol:
+
+```objective-c
+@protocol HeroAnimator <NSObject>
+
+// Determine if view can be animated
+- (BOOL)canAnimateView:(UIView *)view appearing:(BOOL)appear;
+
+// Perform animation and return duration
+- (NSTimeInterval)animateFromViews:(NSArray *)fromviews toViews:(NSArray *)toviews;
+
+// Clean up animation resources
+- (void)clean;
+
+// Seek to specific time point
+- (void)seekToTime:(NSTimeInterval)timePassed;
+
+// Resume animation from specific time
+- (NSTimeInterval)resumeForTime:(NSTimeInterval)timePassed reverse:(BOOL)reverse;
+
+// Apply state to view
+- (void)applyState:(HeroTargetState *)state toView:(UIView *)view;
+
+@end
+```
+
+### Custom Preprocessor
+
+Create custom preprocessors by implementing the `HeroPreprocessor` protocol:
+
+```objective-c
+@protocol HeroPreprocessor <NSObject>
+
+// Process source and destination views
+- (void)processFromViews:(NSArray *)fromviews toViews:(NSArray *)toviews;
+
+@end
+```
+
+---
+
+## API Documentation
 
 ### UIView (Hero)
 
@@ -746,48 +823,7 @@ typedef NS_ENUM(NSInteger, CascadeDirection) {
 };
 ```
 
-## Advanced Usage
-
-### Custom Animator
-
-Create custom animators by implementing the `HeroAnimator` protocol:
-
-```objective-c
-@protocol HeroAnimator <NSObject>
-
-// Determine if view can be animated
-- (BOOL)canAnimateView:(UIView *)view appearing:(BOOL)appear;
-
-// Perform animation and return duration
-- (NSTimeInterval)animateFromViews:(NSArray *)fromviews toViews:(NSArray *)toviews;
-
-// Clean up animation resources
-- (void)clean;
-
-// Seek to specific time point
-- (void)seekToTime:(NSTimeInterval)timePassed;
-
-// Resume animation from specific time
-- (NSTimeInterval)resumeForTime:(NSTimeInterval)timePassed reverse:(BOOL)reverse;
-
-// Apply state to view
-- (void)applyState:(HeroTargetState *)state toView:(UIView *)view;
-
-@end
-```
-
-### Custom Preprocessor
-
-Create custom preprocessors by implementing the `HeroPreprocessor` protocol:
-
-```objective-c
-@protocol HeroPreprocessor <NSObject>
-
-// Process source and destination views
-- (void)processFromViews:(NSArray *)fromviews toViews:(NSArray *)toviews;
-
-@end
-```
+---
 
 ## Example Project
 
@@ -820,6 +856,8 @@ The example project includes multiple demonstration scenarios:
 - **CityGuide**: City guide card transitions
 - **MusicPlayer**: Music player interface transitions
 
+---
+
 ## Best Practices
 
 ### 1. Performance Optimization
@@ -846,6 +884,8 @@ The example project includes multiple demonstration scenarios:
 - Use longer animation durations (e.g., 2.0 seconds) to observe animation details
 - Implement `HeroProgressUpdateObserver` to monitor transition progress
 - Use `heroWillStartAnimatingTo/From` callbacks to debug view states
+
+---
 
 ## FAQ
 
@@ -877,13 +917,7 @@ A: Use view matching by setting the same heroID for source and destination views
 
 A: Call `[[Hero shared] cancelAnimated:YES]` to cancel the current interactive transition and return to the initial state.
 
-## Support
-
-If you encounter issues or have suggestions:
-
-- Submit an [Issue](https://github.com/luowei/LWHeroOC/issues)
-- Send a Pull Request
-- Contact: luowei@wodedata.com
+---
 
 ## Contributing
 
@@ -895,17 +929,33 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
+## Support
+
+If you encounter issues or have suggestions:
+
+- Submit an [Issue](https://github.com/luowei/LWHeroOC/issues)
+- Send a Pull Request
+- Email: luowei@wodedata.com
+
+---
+
 ## Author
 
 **luowei** - [GitHub](https://github.com/luowei)
 
 Email: luowei@wodedata.com
 
+---
+
 ## Acknowledgments
 
 - Based on [Hero-ObjectiveC](https://github.com/luca-li/Hero-ObjectiveC) with significant improvements
 - Inspired by Apple Keynote's Magic Move effect
 - Thanks to all contributors
+
+---
 
 ## License
 
@@ -933,12 +983,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
+---
+
 ## Changelog
 
-### 1.0.0
-- Stable release based on Hero-ObjectiveC
-- Support for iOS 8.0+
+### Version 1.0.0
+
+- Initial stable release based on Hero-ObjectiveC
+- iOS 8.0+ support
 - Complete animation modifier system
 - Interactive transition support
-- Plugin system
+- Plugin system architecture
 - CocoaPods and Carthage support
+- Comprehensive documentation and examples
+
+---
+
+**Made with ❤️ by the LWHeroOC team**
