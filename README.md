@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LWHeroOC.svg?style=flat)](https://cocoapods.org/pods/LWHeroOC)
 [![Platform](https://img.shields.io/cocoapods/p/LWHeroOC.svg?style=flat)](https://cocoapods.org/pods/LWHeroOC)
 
-[English](./README.md) | [中文版](./README_ZH.md)
+[English](./README.md) | [中文版](./README_ZH.md) | [Swift Version](./README_SWIFT_VERSION.md)
 
 ---
 
